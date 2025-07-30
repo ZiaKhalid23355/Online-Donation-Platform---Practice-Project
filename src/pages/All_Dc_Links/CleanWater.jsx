@@ -1,0 +1,75 @@
+import React, { useState } from 'react';
+import CleanWaterVideo from '../../assets/Video/CleanWaterVideo.mp4'
+
+
+
+const CleanWater = () => {
+  const [amount, setAmount] = useState('');
+  const [thankYouMessage, setThankYouMessage] = useState('');
+
+  const handleDonation = () => {
+    const donation = parseFloat(amount);
+    if (isNaN(donation) || donation <= 0) {
+      setThankYouMessage('Please enter a valid amount in AED. ');
+      return;
+    }
+
+    setThankYouMessage(` Thankyou for being someone's smile, Thank you for donating ${donation.toFixed(2)} AED for the needy`);
+    setAmount('');
+  };
+
+  return (
+    <div className="plant-trees-page">
+       <video src={CleanWaterVideo} className="background-video" autoPlay loop muted playsInline>
+      </video>
+
+
+      <div className="donation-box">
+        
+         <h1>Provide Clean Drinking Water</h1>
+  <p>
+    Millions still lack access to <strong>safe, drinkable water</strong>. Your contribution supports building wells, purifying water, and preventing waterborne diseases.
+  </p>
+  <p>
+    <em>One drop can change a life</em> — be that drop today.
+  </p>
+
+
+
+        <input
+          type="number"
+          placeholder="Enter donation amount (AED)"
+          value={amount}
+          onChange={(e) => setAmount(e.target.value)}
+        />
+
+        <button onClick={handleDonation}>Donate Now</button>
+
+        {thankYouMessage && <div className="thank-you">{thankYouMessage}</div>}
+      </div>
+    </div>
+  );
+};
+
+export default CleanWater;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

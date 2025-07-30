@@ -1,0 +1,44 @@
+#searchicon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px; 
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%; 
+  padding: 70px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  font-size: 14px;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center; 
+}
+
+.navbar-left ul,
+.navbar-right ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-left ul {
+  gap: 20px;
+}
+
+.navbar-right ul {
+  gap: 60px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  transform: translateY(-2px);
+}

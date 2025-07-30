@@ -1,0 +1,86 @@
+import React from 'react'
+import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from 'recharts';
+import './AllLinksCss/AllLinks.css';
+
+
+const donationData = [
+  { name: 'Plant Trees', value: 32000 },
+  { name: 'Clean Water', value: 28000 },
+  { name: 'Saving the Ocean', value: 25000 },
+  { name: 'City Cleanliness', value: 23000 },
+  { name: 'Blood Donation Drives', value: 21000 },
+  { name: 'Free Medical Camps', value: 18500 },
+  { name: 'Mental Health Support', value: 17000 },
+  { name: 'Support Orphanages', value: 16000 },
+  { name: 'Sponsor Education', value: 14500 },
+  { name: 'School Supplies Drives', value: 13000 },
+  { name: 'Feed the Homeless', value: 12000 },
+  { name: 'Emergency Shelter', value: 10000 },
+  { name: 'Community Kitchen', value: 8500 },
+  { name: 'Supporting NGOs', value: 7500 },
+  { name: 'Disaster Relief', value: 9000 }
+];
+
+const COLORS = [ 
+  '#2E8B57',  '#00BFFF',  '#1E90FF',  '#9ACD32',  '#FF4500',  '#20B2AA',  '#FFB6C1',  '#DAA520',  '#FFD700',  '#F0E68C',  '#FFA500',  '#CD5C5C',  '#FFA07A',  '#BA55D3',  '#DC143C'
+];
+
+const Revenue_Generated = () => {
+  return (<div className="revenue-container">
+      <div className="revenue-card">
+        <h1>Total Donations: 255,000 AED</h1>
+        <p>This donation has been successfully received by the following 15 areas:</p>
+
+        <div className="chart-section">
+          <ResponsiveContainer width="100%" height={500}>
+            <PieChart>
+              <Pie
+                data={donationData}
+                cx="50%"
+                cy="50%"
+                labelLine={false}
+                label={({ name, percent }) => `${name} (${(percent * 100).toFixed(0)}%)`}
+                outerRadius={140}
+                dataKey="value"
+              >
+               {donationData.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={COLORS[index]} />
+                ))}
+              </Pie>
+
+            <Tooltip
+                contentStyle={{
+                  backgroundColor: "rgba(138, 70, 70, 0.9)",
+                  border: "none",
+                  borderRadius: "12px",
+                  color: "#fff",
+                  boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
+                  padding: "10px 15px",
+                }}
+                itemStyle={{
+                  color: "#fff",
+                  fontWeight: "600",
+                  fontSize: "14px",
+                  lineHeight: "1.6",
+                }}
+              />
+
+
+              <Legend verticalAlign="bottom" height={36} />
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+        <div className="donation-breakdown">
+          {donationData.map((item, index) => (
+            <div key={index} className="donation-item">
+              <span>{item.name}</span>
+              <span>{item.value.toLocaleString()} AED</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+)
+}
+
+export default Revenue_Generated
