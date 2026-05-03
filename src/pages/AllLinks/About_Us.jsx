@@ -14,7 +14,7 @@ const About_Us = () => {
           We are more than just a donation portal. We are a movement — one that believes every small act of kindness can ripple outward, shaping lives and communities for the better. Whether you're planting trees to breathe life back into barren lands, helping a child walk into school with pride, or putting food on the table for someone who hasn't eaten in days — your generosity matters.
         </p>
         <p>
-          Our platform allows you to directly support initiatives across five vital pillars:
+          Our platform helps by allowing you to directly support initiatives across five vital pillars:
         </p>
         <ul>
           <li><strong>Environment & Sustainability:</strong> Heal the planet through tree-planting, clean water, ocean preservation, and waste management.</li>
@@ -36,3 +36,5 @@ const About_Us = () => {
 };
 
 export default About_Us;
+
+// The following help to export the component
