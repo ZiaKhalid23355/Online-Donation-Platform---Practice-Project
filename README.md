@@ -1,12 +1,26 @@
-# React + Vite
+## About The Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Online Donation Platform (ODP) is a frontend-focused web application developed as part of my web development learning journey. The project explores the concept of a modern donation and awareness platform that connects individuals with social, environmental and humanitarian causes such as disaster relief, education sponsorship, healthcare initiatives, environmental conservation, community kitchens, orphanage support and NGO-led programs.
 
-Currently, two official plugins are available:
+The primary objective of this project was to strengthen my understanding of frontend development, application architecture, responsive design, component-based development and modern development workflows while creating a visually appealing and user-friendly experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is intended as a practice and learning project rather than a production-ready public platform. The focus was on translating an idea into a functional interface, experimenting with design concepts commonly found in modern donation platforms and gaining hands-on experience through building, debugging and continuous improvement.
 
-## Expanding the ESLint configuration
+### Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* Vite
+* React Router DOM
+* i18next (Multilingual Support)
+* Recharts (Data Visualization)
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+
+### Current Status
+
+This project currently focuses on frontend development and user interface implementation. Backend services, database integration, authentication and donation management functionality are under development and are expected to be introduced in future iterations, gradually transforming the platform into a full-stack application.
+
+### Learning Outcomes
+
+Through this project, I gained practical experience in component-based architecture, routing, responsive UI development, localization, state management concepts, application structuring, debugging and modern frontend development practices.
