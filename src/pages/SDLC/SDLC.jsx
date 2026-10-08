@@ -65,6 +65,7 @@ const SDLC = () => {
       <h1>Software Development Life Cycle (Waterfall Model)</h1>
 
       <ResponsiveContainer width="100%" height={300}>
+
         <BarChart data={phaseData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="phase" />
@@ -77,6 +78,7 @@ const SDLC = () => {
             ))}
           </Bar>
         </BarChart>
+        
       </ResponsiveContainer>
 
       {phaseData.map((item, idx) => (

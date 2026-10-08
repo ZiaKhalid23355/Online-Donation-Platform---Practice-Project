@@ -36,5 +36,3 @@ const About_Us = () => {
 };
 
 export default About_Us;
-
-// The following help to export the component

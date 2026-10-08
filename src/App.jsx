@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//imports needs modifications- for fullstack development
+//To be edited after cloning
 
 import Home from './pages/Home/Home';
-
 import About_Us from './pages/AllLinks/About_Us';
 import Contact_Us from './pages/AllLinks/Contact_Us';
 import Revenue_Generated from './pages/AllLinks/Revenue_Generated';
@@ -33,11 +34,7 @@ import ShelterConstruction from './pages/All_Dc_Links/ShelterConstruction';
 import CommunityKitchens from './pages/All_Dc_Links/CommunityKitchens';
 import SupportNgos from './pages/All_Dc_Links/SupportNgos';
 import DisasterRelief from './pages/All_Dc_Links/DisasterRelief';
-
 import SDLC from './pages/SDLC/SDLC.JSX';
-
-
-
 
 
 const App = () => {
@@ -62,13 +59,7 @@ const App = () => {
           <Route path="/SearchIcon" element={<SearchIcon />} />
 
 
-
-
-
-
-
-
-
+          
           <Route path="/plantprees" element={<PlantTrees />} />
           <Route path="/cleanwater" element={<CleanWater />} />
           <Route path="/cleancity" element={<CleanCity />} />

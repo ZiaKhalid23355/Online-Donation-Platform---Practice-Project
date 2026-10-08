@@ -7,24 +7,42 @@ const PlantTrees = () => {
   const [amount, setAmount] = useState('');
   const [thankYouMessage, setThankYouMessage] = useState('');
 
-  const handleDonation = () => {
-    const donation = parseFloat(amount);
-    if (isNaN(donation) || donation <= 0) {
-      setThankYouMessage('Please enter a valid amount in AED. ');
-      return;
-    }
+  
+  const handleDonation = async () => {
+  const donation = parseFloat(amount);
 
-    setThankYouMessage(` Thankyou for being someone's smile, Thank you for donating ${donation.toFixed(2)} AED for the needy`);
-    setAmount('');
-  };
+  if (isNaN(donation) || donation <= 0) {
+    setThankYouMessage("Please enter a valid amount in AED.");
+    return;
+  }
+
+  try {
+    await fetch("http://localhost:5000/api/donate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: "Plant Trees",
+        Vanlue: donation
+      })
+    });
+
+    setThankYouMessage(
+      `Thank you for your donation of ${donation.toFixed(2)} AED`
+    );
+// To be edited from here
+    setAmount("");
+    //setAmount("")- Working required
+  } catch (error) {
+    console.log(error);
+  }
+};
 
   return (
     <div className="plant-trees-page">
        <video src={ReforestationVideo} className="background-video" autoPlay loop muted playsInline>
       </video>
-
-      
-
 
       <div className="donation-box">
            <h2><strong>Make a Lasting Impact</strong></h2>

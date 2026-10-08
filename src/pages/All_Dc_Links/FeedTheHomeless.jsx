@@ -33,9 +33,6 @@ const FeedTheHomeless = () => {
   <strong>Make a real difference—</strong><em>one plate at a time</em>.
 </p>
 
-
-
-
         <input
           type="number"
           placeholder="Enter donation amount (AED)"

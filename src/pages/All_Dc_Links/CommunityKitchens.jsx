@@ -34,8 +34,6 @@ const CommunityKitchens = () => {
   <strong>Together, we can fight hunger</strong> and bring comfort to the vulnerable—one meal at a time.
 </p>
 
-
-
         <input
           type="number"
           placeholder="Enter donation amount (AED)"

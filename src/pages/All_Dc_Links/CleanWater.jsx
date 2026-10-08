@@ -31,10 +31,8 @@ const CleanWater = () => {
     Millions still lack access to <strong>safe, drinkable water</strong>. Your contribution supports building wells, purifying water, and preventing waterborne diseases.
   </p>
   <p>
-    <em>One drop can change a life</em> — be that drop today.
+    <em>One drop can change a life</em> - be that drop today.
   </p>
-
-
 
         <input
           type="number"

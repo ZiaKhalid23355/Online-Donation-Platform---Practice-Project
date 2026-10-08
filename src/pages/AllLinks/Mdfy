@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from 'recharts';
 import './AllLinksCss/AllLinks.css';
@@ -26,7 +27,8 @@ const COLORS = [
 ];
 
 const Revenue_Generated = () => {
-  return (<div className="revenue-container">
+  return (
+    <div className="revenue-container">
       <div className="revenue-card">
         <h1>Total Donations: 255,000 AED</h1>
         <p>This donation has been successfully received by the following 15 areas:</p>

@@ -1,4 +1,5 @@
 import React from 'react'
+//Searching icon is not working
 
 const SearchIcon = () => {
   return (
