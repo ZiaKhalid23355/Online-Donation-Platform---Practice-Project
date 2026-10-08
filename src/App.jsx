@@ -34,7 +34,7 @@ import ShelterConstruction from './pages/All_Dc_Links/ShelterConstruction';
 import CommunityKitchens from './pages/All_Dc_Links/CommunityKitchens';
 import SupportNgos from './pages/All_Dc_Links/SupportNgos';
 import DisasterRelief from './pages/All_Dc_Links/DisasterRelief';
-import SDLC from './pages/SDLC/SDLC.JSX';
+import SDLC from './pages/SDLC/SDLC.jsx';
 
 
 const App = () => {
